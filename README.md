@@ -10,3 +10,5 @@ git commit -m
 git push -u
 
 '''
+
+# Created the venv virtual environment
