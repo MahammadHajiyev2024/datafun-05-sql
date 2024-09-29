@@ -96,6 +96,8 @@ Insert data from authors.csv and books.csv into the respective tables, handling 
 Implement logging for debugging, with log messages output to log.txt.
 Created a create_tables.sql file in the sql/ folder to define the schema for both tables. Verified that the database was successfully created, and the data was inserted without errors.
 
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/c6e94ade-e732-4e82-802b-116f8ed26715">
+
 
 ## SQL Operations and Database Manipulation
 
@@ -107,6 +109,9 @@ Inserting additional records (insert_records.sql)
 Updating records (update_records.sql)
 Deleting records (delete_records.sql)
 Executing queries (query_aggregation.sql, query_filter.sql, query_sorting.sql, query_group_by.sql, query_join.sql)
+
+<img width="681" alt="image" src="https://github.com/user-attachments/assets/d97413b0-7d9e-4ca8-afb9-04b8a43dda58">
+
 
 ## Stage and Push Files to GitHub
 I used the following Git commands to stage and commit changes:
