@@ -84,3 +84,57 @@
 2024-09-29 15:44:31,758 - INFO - Database created successfully.
 2024-09-29 15:44:31,785 - INFO - Tables created successfully.
 2024-09-29 15:44:31,819 - INFO - Database initialization completed successfully.
+2024-09-29 15:55:55,027 - INFO - Database initialization started.
+2024-09-29 15:55:55,027 - DEBUG - Folder already exists: sql
+2024-09-29 15:55:55,027 - DEBUG - Folder already exists: data
+2024-09-29 15:55:55,027 - DEBUG - Folder already exists: data
+2024-09-29 15:55:55,028 - INFO - Database created successfully.
+2024-09-29 15:55:55,040 - INFO - Tables created successfully.
+2024-09-29 15:55:55,062 - INFO - Database initialization completed successfully.
+2024-09-29 15:56:06,860 - INFO - Database initialization started.
+2024-09-29 15:56:06,860 - DEBUG - Folder already exists: sql
+2024-09-29 15:56:06,860 - DEBUG - Folder already exists: data
+2024-09-29 15:56:06,860 - DEBUG - Folder already exists: data
+2024-09-29 15:56:06,861 - INFO - Database created successfully.
+2024-09-29 15:56:06,874 - INFO - Tables created successfully.
+2024-09-29 15:56:06,897 - INFO - Database initialization completed successfully.
+2024-09-29 15:57:21,704 - INFO - Executed SQL from sql\create_tables.sql
+2024-09-29 15:57:21,709 - ERROR - Error executing SQL from sql\insert_records.sql: near "s": syntax error
+2024-09-29 15:57:21,712 - INFO - Executed SQL from sql\update_records.sql
+2024-09-29 15:57:21,712 - INFO - Executed SQL from sql\delete_records.sql
+2024-09-29 15:57:21,715 - INFO - Executed SQL from sql\query_aggregation.sql
+2024-09-29 15:57:21,715 - INFO - Executed SQL from sql\query_filter.sql
+2024-09-29 15:57:21,716 - INFO - Executed SQL from sql\query_sorting.sql
+2024-09-29 15:57:21,717 - ERROR - Error executing SQL from sql\query_group_by.sql: no such column: last_name
+2024-09-29 15:57:21,718 - INFO - Executed SQL from sql\query_join.sql
+2024-09-29 15:57:21,718 - INFO - Program ended
+2024-09-29 15:58:41,690 - INFO - Executed SQL from sql\create_tables.sql
+2024-09-29 15:58:41,695 - ERROR - Error executing SQL from sql\insert_records.sql: near "s": syntax error
+2024-09-29 15:58:41,696 - INFO - Executed SQL from sql\update_records.sql
+2024-09-29 15:58:41,697 - INFO - Executed SQL from sql\delete_records.sql
+2024-09-29 15:58:41,698 - INFO - Executed SQL from sql\query_aggregation.sql
+2024-09-29 15:58:41,699 - INFO - Executed SQL from sql\query_filter.sql
+2024-09-29 15:58:41,699 - INFO - Executed SQL from sql\query_sorting.sql
+2024-09-29 15:58:41,701 - INFO - Executed SQL from sql\query_group_by.sql
+2024-09-29 15:58:41,701 - INFO - Executed SQL from sql\query_join.sql
+2024-09-29 15:58:41,701 - INFO - Program ended
+2024-09-29 15:59:56,827 - INFO - Executed SQL from sql\create_tables.sql
+2024-09-29 15:59:56,834 - ERROR - Error executing SQL from sql\insert_records.sql: near "s": syntax error
+2024-09-29 15:59:56,836 - INFO - Executed SQL from sql\update_records.sql
+2024-09-29 15:59:56,837 - INFO - Executed SQL from sql\delete_records.sql
+2024-09-29 15:59:56,837 - INFO - Executed SQL from sql\query_aggregation.sql
+2024-09-29 15:59:56,838 - INFO - Executed SQL from sql\query_filter.sql
+2024-09-29 15:59:56,840 - INFO - Executed SQL from sql\query_sorting.sql
+2024-09-29 15:59:56,841 - INFO - Executed SQL from sql\query_group_by.sql
+2024-09-29 15:59:56,841 - INFO - Executed SQL from sql\query_join.sql
+2024-09-29 15:59:56,843 - INFO - Program ended
+2024-09-29 16:01:08,535 - INFO - Executed SQL from sql\create_tables.sql
+2024-09-29 16:01:08,542 - INFO - Executed SQL from sql\insert_records.sql
+2024-09-29 16:01:08,544 - INFO - Executed SQL from sql\update_records.sql
+2024-09-29 16:01:08,544 - INFO - Executed SQL from sql\delete_records.sql
+2024-09-29 16:01:08,546 - INFO - Executed SQL from sql\query_aggregation.sql
+2024-09-29 16:01:08,546 - INFO - Executed SQL from sql\query_filter.sql
+2024-09-29 16:01:08,547 - INFO - Executed SQL from sql\query_sorting.sql
+2024-09-29 16:01:08,547 - INFO - Executed SQL from sql\query_group_by.sql
+2024-09-29 16:01:08,549 - INFO - Executed SQL from sql\query_join.sql
+2024-09-29 16:01:08,549 - INFO - Program ended
