@@ -81,7 +81,7 @@ environment to keep your project dependencies isolated.
 │   ├── README.md                  # Project documentation
 │   └── log.txt                    # Log file for tracking program execution
 
-
+```
 ## Database Creation and Data Insertion
 
 I updated the project to include automatic database creation and population from CSV files.I made these changes:
@@ -99,10 +99,19 @@ Created a create_tables.sql file in the sql/ folder to define the schema for bot
 
 Added scripts to perform SQL operations such as inserting, updating, deleting records, and executing queries with joins, filters, and aggregations:
 
-Created db_operations_mahmadhajiyev.py to perform:
+Created db_operations_MahammadHajiyev.py to perform:
 
 Inserting additional records (insert_records.sql)
 Updating records (update_records.sql)
 Deleting records (delete_records.sql)
 Executing queries (query_aggregation.sql, query_filter.sql, query_sorting.sql, query_group_by.sql, query_join.sql)
+
+## Stage and Push Files to GitHub
+I used the following Git commands to stage and commit changes:
+
+```
+git add .
+git commit -m "message: commit message"
+git push origin main
+```
 
