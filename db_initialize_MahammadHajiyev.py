@@ -57,25 +57,14 @@ def create_tables(db_path, sql_file_path):
 def insert_data_from_csv(db_path, author_data_path, book_data_path):
     """Read data from CSV files and insert the records into their respective tables."""
     try:
-        # Read CSV files
         authors_df = pd.read_csv(author_data_path)
         books_df = pd.read_csv(book_data_path)
-        
-        # Rename columns to match the SQL table schema
-        authors_df.rename(columns={'first': 'first_name', 'last': 'last_name'}, inplace=True)
-        
-        # Add the 'year_born' column with NaN values (or you can provide default values if known)
-        authors_df['year_born'] = pd.NA
-        
-        # Insert data into the database
         with sqlite3.connect(db_path) as conn:
-            authors_df.to_sql("authors", conn, if_exists="append", index=False)
-            books_df.to_sql("books", conn, if_exists="append", index=False)
-            logging.info("Data inserted successfully from CSV files.")
+            authors_df.to_sql("authors", conn, if_exists="replace", index=False)
+            books_df.to_sql("books", conn, if_exists="replace", index=False)
+            print("Data inserted successfully.")
     except (sqlite3.Error, pd.errors.EmptyDataError, FileNotFoundError) as e:
-        logging.exception(f"Error inserting data: {e}")
-
-
+        print(f"Error inserting data: {e}")
 
 
 # Defining main function
