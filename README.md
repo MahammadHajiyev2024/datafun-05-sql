@@ -82,6 +82,8 @@ environment to keep your project dependencies isolated.
 │   └── log.txt                    # Log file for tracking program execution
 
 ```
+<img width="193" alt="image" src="https://github.com/user-attachments/assets/314db54f-217f-4ea7-a8ac-357354189a59">
+
 ## Database Creation and Data Insertion
 
 I updated the project to include automatic database creation and population from CSV files.I made these changes:
