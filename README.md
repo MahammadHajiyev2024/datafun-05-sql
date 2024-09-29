@@ -1,7 +1,11 @@
 # Project 5: Mahammad Hajiyev SQL project
+Project 5 integrates Python and SQL, focusing on database interactions using SQLite. This project introduces logging, a useful tool for debugging and monitoring projects, and involves creating and managing a database, building a schema, and performing various SQL operations, including queries with joins, filters, and aggregations.
 
 ## Overview
 This project integrates Python and SQL using SQLite. It involves creating and managing a database, defining a schema, and performing various SQL operations such as joins, filters, and aggregations. Additionally, logging is implemented to track program execution and assist in debugging and monitoring.
+
+## Installation and Setup
+
 
 ## Requirements
 - **Database:** SQLite
@@ -10,6 +14,55 @@ This project integrates Python and SQL using SQLite. It involves creating and ma
   - `pandas`
   - `pyarrow`
 - **Logging:** Python's built-in logging module to track program execution.
+
+### Create a GitHub Repository
+
+Create a new repository on GitHub, including a README file.
+Clone the repository to your local machine
+
+### Add a .gitignore File
+
+Ensure the following entries are added to your .gitignore file to exclude unnecessary files from being committed:
+
+bash
+
+# Python virtual environment
+.venv/
+
+# Visual Studio Code settings and workspace
+.vscode/
+
+# Compiled Python files
+__pycache__/
+
+### Create and Activate a Virtual Environment
+
+Create a virtual environment:
+
+bash
+python -m venv .venv
+
+
+Activate the virtual environment:
+
+bash
+.\.venv\Scripts\activate
+
+## External Dependencies:
+To work on this project, install the necessary external packages. It is recommended to use a virtual
+environment to keep your project dependencies isolated.
+
+
+### Setting Up the Virtual Environment:
+1. **Create a virtual environment**:
+   ```bash
+   python -m venv venv
+
+2. **Activate the virtual environment**:
+    .\venv\Scripts\activate
+
+3. **Install required packages**:
+    pip install pandas pyarrow
 
 ## Project Structure
 ```bash
@@ -28,18 +81,28 @@ This project integrates Python and SQL using SQLite. It involves creating and ma
 │   ├── README.md                  # Project documentation
 │   └── log.txt                    # Log file for tracking program execution
 
-## External Dependencies:
-To work on this project, install the necessary external packages. It is recommended to use a virtual
-environment to keep your project dependencies isolated.
 
-### Setting Up the Virtual Environment:
-1. **Create a virtual environment**:
-   ```bash
-   python -m venv venv
+## Database Creation and Data Insertion
 
-2. **Activate the virtual environment**:
-    .\venv\Scripts\activate
+I updated the project to include automatic database creation and population from CSV files.I made these changes:
 
-Install required packages:
+Added db_initialize_mahmadhajiyev.py script to:
 
-pip install pandas pyarrow
+Create an SQLite database (project.db) if it doesn't already exist.
+Execute SQL commands from create_tables.sql to set up authors and books tables.
+Insert data from authors.csv and books.csv into the respective tables, handling potential mismatches between the CSV headers and table schema.
+Implement logging for debugging, with log messages output to log.txt.
+Created a create_tables.sql file in the sql/ folder to define the schema for both tables. Verified that the database was successfully created, and the data was inserted without errors.
+
+
+## SQL Operations and Database Manipulation
+
+Added scripts to perform SQL operations such as inserting, updating, deleting records, and executing queries with joins, filters, and aggregations:
+
+Created db_operations_mahmadhajiyev.py to perform:
+
+Inserting additional records (insert_records.sql)
+Updating records (update_records.sql)
+Deleting records (delete_records.sql)
+Executing queries (query_aggregation.sql, query_filter.sql, query_sorting.sql, query_group_by.sql, query_join.sql)
+
